@@ -39,7 +39,8 @@ jobs:
 
             📦 <b>專案: </b> <code>${{ github.repository }}</code>
             🌿 <b>分支: </b> <code>${{ github.ref_name }}</code>
-            👤 <b>觸發: </b> <code>${{ github.actor }}</code>
+            ⚙️ <b>workflow: </b> <code>${{ github.workflow }}</code>
+            👤 <b>觸發者: </b> <code>${{ github.actor }}</code>
             💬 ${{ steps.commit.outputs.message }}
             🔗 <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">詳細</a>
       - name: Notify Telegram (Failure)
@@ -55,6 +56,7 @@ jobs:
 
             📦 <b>專案: </b> <code>${{ github.repository }}</code>
             🌿 <b>分支: </b> <code>${{ github.ref_name }}</code>
-            👤 <b>觸發: </b> <code>${{ github.actor }}</code>
+            ⚙️ <b>workflow: </b> <code>${{ github.workflow }}</code>
+            👤 <b>觸發者: </b> <code>${{ github.actor }}</code>
             💬 ${{ steps.commit.outputs.message }}
             🔗 <a href="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}">詳細</a>
